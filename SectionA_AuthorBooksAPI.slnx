@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="SectionA_AuthorBooksAPI.Domain/SectionA_AuthorBooksAPI.Domain.csproj" Id="a5930b61-69b4-46bf-a40b-b307838bae9f" />
+  <Project Path="SectionA_AuthorBooksAPI.Repository/SectionA_AuthorBooksAPI.Repository.csproj" Id="d59a4a53-0106-4f9a-ab34-95049140a3cb" />
+  <Project Path="SectionA_AuthorBooksAPI.Service/SectionA_AuthorBooksAPI.Service.csproj" Id="39643a3e-ba5b-4fa0-9d8c-98ab272654e6" />
+  <Project Path="SectionA_AuthorBooksAPI/SectionA_AuthorBooksAPI.csproj" />
+</Solution>
