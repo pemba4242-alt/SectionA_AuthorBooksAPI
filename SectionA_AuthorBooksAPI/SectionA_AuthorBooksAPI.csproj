@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SectionA_AuthorBooksAPI.Repository\SectionA_AuthorBooksAPI.Repository.csproj" />
+    <ProjectReference Include="..\SectionA_AuthorBooksAPI.Service\SectionA_AuthorBooksAPI.Service.csproj" />
   </ItemGroup>
 
 </Project>

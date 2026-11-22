@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using SectionA_AuthorBooksAPI.Repository;
+using SectionA_AuthorBooksAPI.Repository.Implementations;
+using SectionA_AuthorBooksAPI.Repository.Interfaces;
+using SectionA_AuthorBooksAPI.Service.Implementations;
+using SectionA_AuthorBooksAPI.Service.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +16,9 @@ builder.Services.AddOpenApi();
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
+
+builder.Services.AddScoped<IAuthorsService, AuthorsService>();
+builder.Services.AddScoped<IAuthorsRepository, AuthorsRepository>();
 
 var app = builder.Build();
 
